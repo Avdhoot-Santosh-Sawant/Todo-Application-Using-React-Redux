@@ -1,0 +1,41 @@
+.btn-add{
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.todo-inp{
+    padding: 5xp ;
+    font-size: medium;
+
+}
+
+.todo-card{
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    animation-name: btov;
+    animation-duration: 2s;
+}
+
+@keyframes btov{
+    0%{
+    opacity: 0.3;
+    }
+    100%{
+       
+        opacity:1;
+    }
+}
+
+.card-con{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
