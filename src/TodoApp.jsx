@@ -9,12 +9,11 @@ export default function TodoApp({ inc, dec }) {
   const [todoData, setTodo] = useState("");
 
   const addTodo = () => {
-    if(todoData.length>4){
+    if (todoData.length > 4) {
       dispatch(addTodos(todoData));
       inc();
       setTodo("");
     }
-   
   };
 
   const delTodo = (id) => {
@@ -28,12 +27,15 @@ export default function TodoApp({ inc, dec }) {
 
   return (
     <>
-      <hr />
-
-      <div>
+      <div className="input-div">
         <input
           className="todo-inp"
           type="text"
+          onKeyDown={(e) => {
+            if (e.key == "Enter") {
+              addTodo();
+            }
+          }}
           onChange={(e) => {
             setTodo(e.target.value);
           }}
@@ -41,10 +43,8 @@ export default function TodoApp({ inc, dec }) {
         />
         <button onClick={addTodo} className="btn-add">
           ADD
-          
         </button>
       </div>
-      <hr />
 
       <div className="card-con">
         {todos &&

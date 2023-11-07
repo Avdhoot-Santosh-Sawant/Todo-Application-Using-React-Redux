@@ -1,41 +1,72 @@
-.btn-add{
-    padding: 5px 20px;
-    background-color: blue;
-    color: white;
-    font-weight: 600;
-    margin-left: 10px;
+#heading {
+  text-align: center;
+  margin: 20px;
 }
 
-.todo-inp{
-    padding: 5xp ;
-    font-size: medium;
+.btn-add {
+  padding: 5px 20px;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.todo-inp {
+  font-size: medium;
+  width: 200px;
+  padding: 5xp 10px 5px 10px;
 
 }
 
-.todo-card{
-    border: 1px solid black;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    margin-top: 10px;
-    animation-name: btov;
-    animation-duration: 2s;
+.todo-card {
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  margin-top: 10px;
+  animation-name: btov;
+  animation-duration: 2s;
 }
 
-@keyframes btov{
-    0%{
+@keyframes btov {
+  0% {
     opacity: 0.3;
-    }
-    100%{
-       
-        opacity:1;
-    }
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.card-con{
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-    flex-wrap: wrap;
+.card-con {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
 
+.outer-con {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.con {
+  width: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+  .con {
+    width: 90%;
+  }
+}
+
+#count-value{
+    text-align: end;
+}
+
+.input-div{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px 0px;
 }
