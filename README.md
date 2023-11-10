@@ -5,7 +5,7 @@ git clone https://github.com/Avdhoot-Santosh-Sawant/Todo-Application-using-React
 
 ## Install dependencies using command :- 
 
-npm install @reduxjs/toolkit react react-dom react-redux
+npm install @reduxjs/toolkit react react-dom react-redux express nodemon
 
 
 ## Start server using command :-
