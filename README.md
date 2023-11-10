@@ -10,3 +10,9 @@ npm install @reduxjs/toolkit react react-dom react-redux
 
 ## Start server using command :-
 npx nodemon index.js
+
+## Create .env file in server folder 
+
+.env file contain :- 
+
+DATABASE_URL="Your Database URL ( Mongodb Atlas )"
